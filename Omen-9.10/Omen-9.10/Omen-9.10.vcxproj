@@ -161,6 +161,7 @@
     <ClInclude Include="Engine\Source\Runtime\Engine\Classes\GameFramework\GameSession.h" />
     <ClInclude Include="Engine\Source\Runtime\Engine\Classes\GameFramework\PlayerController.h" />
     <ClInclude Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Public\Athena\FortGameModeAthena.h" />
+    <ClInclude Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Public\Athena\FortPlayerControllerAthena.h" />
     <ClInclude Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Public\Building\BuildingActor.h" />
     <ClInclude Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Public\Building\BuildingFoundation.h" />
     <ClInclude Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Public\Items\FortInventory.h" />
@@ -186,6 +187,7 @@
     <ClCompile Include="Engine\Source\Runtime\Engine\Private\PlayerController.cpp" />
     <ClCompile Include="Engine\Source\Runtime\Engine\Private\World.cpp" />
     <ClCompile Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Private\Athena\FortGameModeAthena.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Private\Athena\FortPlayerControllerAthena.cpp" />
     <ClCompile Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Private\Building\BuildingActor.cpp" />
     <ClCompile Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Private\Building\BuildingFoundation.cpp" />
     <ClCompile Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Private\Items\FortInventory.cpp" />

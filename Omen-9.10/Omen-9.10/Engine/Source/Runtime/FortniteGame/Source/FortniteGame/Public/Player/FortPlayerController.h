@@ -8,8 +8,9 @@ public:
 	class Originals
 	{
 	public:
-		inline static void (*ServerAttemptAircraftJumpOG)(AFortPlayerController* _This, FRotator& ClientRotation);
+		inline static void (*ServerAttemptAircraftJump)(AFortPlayerController* _This, FRotator& Rotation);
 	};
 public:
 	static void ServerExecuteInventoryItem(AFortPlayerController* _This, FGuid& ItemGuid);
+	static void ServerAttemptAircraftJump(AFortPlayerController* _This, FRotator& Rotation);
 };

@@ -2,7 +2,6 @@
 
 #include "pch.h"
 
-inline void (*ConstructAbilitySpecInternal)(FGameplayAbilitySpec*, UGameplayAbility*, int, int, UObject*) = decltype(ConstructAbilitySpecInternal)(InSDKUtils::GetImageBase() + 0x8C8410);
 inline void (*GiveAbilityInternal)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec) = decltype(GiveAbilityInternal)(InSDKUtils::GetImageBase() + 0x8A3F30);
 
 class AbilitySystemComponent

@@ -651,6 +651,13 @@ public:
 	TArray<class UGameplayAbility*>               ReplicatedInstances;                               // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FActiveGameplayEffectHandle            GameplayEffectHandle;                              // 0x0070(0x0008)(RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_78[0x50];                                      // 0x0078(0x0050)(Fixing Struct Size After Last Property [ Dumper-8 ])
+
+public:
+	void ConstructAbilitySpec(UGameplayAbility* InAbility, int InLevel, int InInputID, UObject* InSourceObject)
+	{
+		static void (*ConstructAbilitySpecInternal)(FGameplayAbilitySpec*, UGameplayAbility*, int, int, UObject*) = decltype(ConstructAbilitySpecInternal)(InSDKUtils::GetImageBase() + 0x8C8410);
+		ConstructAbilitySpecInternal(this, InAbility, InLevel, InInputID, InSourceObject);
+	}
 };
 
 // ScriptStruct GameplayAbilities.GameplayEffectSpecHandle

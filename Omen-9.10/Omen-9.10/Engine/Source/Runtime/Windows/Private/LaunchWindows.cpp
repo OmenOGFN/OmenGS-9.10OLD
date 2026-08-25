@@ -15,6 +15,7 @@
 #include "Engine/Source/Runtime/Engine/Classes/GameFramework/PlayerController.h"
 
 #include "Engine/Source/Runtime/FortniteGame/Source/FortniteGame/Public/Athena/FortGameModeAthena.h"
+#include "Engine/Source/Runtime/FortniteGame/Source/FortniteGame/Public/Athena/FortPlayerControllerAthena.h"
 
 #include "Engine/Source/Runtime/FortniteGame/Source/FortniteGame/Public/Building/BuildingActor.h"
 #include "Engine/Source/Runtime/FortniteGame/Source/FortniteGame/Public/Building/BuildingFoundation.h"
@@ -69,6 +70,8 @@ void Main()
     UHookingLibrary::Get()->VTable(AFortPlayerControllerAthena::GetDefaultObj(), 0x840 / 8, PlayerController::ServerAcknowledgePossession, (void**)&PlayerController::Originals::ServerAcknowledgePossession); // 0x108
 
     UHookingLibrary::Get()->Hook(InSDKUtils::GetImageBase() + 0x10915D0, FortGameModeAthena::ReadyToStartMatch, (void**)&FortGameModeAthena::Originals::ReadyToStartMatch);
+
+    UHookingLibrary::Get()->VTable(AFortPlayerControllerAthena::GetDefaultObj(), 0xDE0 / 8, FortPlayerControllerAthena::ServerPlayEmoteItem, (void**)&FortPlayerControllerAthena::Originals::ServerPlayEmoteItem);
 
     UHookingLibrary::Get()->Hook(InSDKUtils::GetImageBase() + 0x1A49CB0, BuildingActor::OnDamageServer, (void**)&BuildingActor::Originals::OnDamageServer);
 

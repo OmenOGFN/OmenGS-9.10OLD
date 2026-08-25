@@ -117,6 +117,9 @@
     <ClInclude Include="Engine\Source\Runtime\Core\Public\Math\Rotator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Public\Athena\FortPlayerControllerAthena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine\Source\Runtime\Windows\Private\LaunchWindows.cpp">
@@ -198,6 +201,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Private\Building\BuildingActor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Source\Runtime\FortniteGame\Source\FortniteGame\Private\Athena\FortPlayerControllerAthena.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

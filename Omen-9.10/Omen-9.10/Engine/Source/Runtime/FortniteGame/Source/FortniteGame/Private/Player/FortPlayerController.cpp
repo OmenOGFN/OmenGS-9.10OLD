@@ -26,3 +26,10 @@ void FortPlayerController::ServerExecuteInventoryItem(AFortPlayerController* _Th
 	}
 	else { PlayerPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemGuid); }
 }
+
+void FortPlayerController::ServerAttemptAircraftJump(AFortPlayerController* _This, FRotator& Rotation)
+{
+	Originals::ServerAttemptAircraftJump(_This, Rotation);
+
+	// Will Do This Later
+}
